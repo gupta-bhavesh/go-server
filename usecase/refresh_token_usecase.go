@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/amitshekhariitbhu/go-backend-clean-architecture/domain"
-	"github.com/amitshekhariitbhu/go-backend-clean-architecture/internal/tokenutil"
+	"github.com/gupta-bhavesh/go-server/domain"
+	"github.com/gupta-bhavesh/go-server/internal/tokenutil"
 )
 
 type refreshTokenUsecase struct {

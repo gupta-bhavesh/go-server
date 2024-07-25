@@ -3,9 +3,9 @@ package controller
 import (
 	"net/http"
 
-	"github.com/amitshekhariitbhu/go-backend-clean-architecture/bootstrap"
-	"github.com/amitshekhariitbhu/go-backend-clean-architecture/domain"
 	"github.com/gin-gonic/gin"
+	"github.com/gupta-bhavesh/go-server/bootstrap"
+	"github.com/gupta-bhavesh/go-server/domain"
 )
 
 type RefreshTokenController struct {

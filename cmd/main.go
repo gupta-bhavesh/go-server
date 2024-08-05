@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	route "github.com/gupta-bhavesh/go-server/api/route"
+	"github.com/gupta-bhavesh/go-server/api/route"
 	"github.com/gupta-bhavesh/go-server/bootstrap"
 )
 

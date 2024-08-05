@@ -15,6 +15,10 @@ type SignupController struct {
 	Env           *bootstrap.Env
 }
 
+func NewSignupController(env *bootstrap.Env, su domain.SignupUsecase) *SignupController {
+	return &SignupController{Env: env, SignupUsecase: su}
+}
+
 func (sc *SignupController) Signup(c *gin.Context) {
 	var request domain.SignupRequest
 

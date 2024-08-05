@@ -22,7 +22,7 @@ type Env struct {
 }
 
 func NewEnv() *Env {
-	env := Env{}
+	env := &Env{}
 	viper.SetConfigFile(".env")
 
 	err := viper.ReadInConfig()
@@ -30,7 +30,7 @@ func NewEnv() *Env {
 		log.Fatal("Can't find the file .env : ", err)
 	}
 
-	err = viper.Unmarshal(&env)
+	err = viper.Unmarshal(env)
 	if err != nil {
 		log.Fatal("Environment can't be loaded: ", err)
 	}
@@ -39,5 +39,5 @@ func NewEnv() *Env {
 		log.Println("The App is running in development env")
 	}
 
-	return &env
+	return env
 }
